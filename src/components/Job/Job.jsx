@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import '../../App.css'
 import { IoLocationSharp } from "react-icons/io5";
 import { AiOutlineDollarCircle } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
 const Job = ({ job }) => {
-    const { job_title,logo,company_name,remote_or_onsite,location,job_type,salary } = job;
+    const { id, job_title, logo, company_name, remote_or_onsite, location, job_type, salary } = job;
     return (
         <div className="card card-compact px-4  bg-base-100 shadow-xl mt-5 pt-5 flex flex-col">
             <figure><img className='w-40' src={logo} alt="Shoes" /></figure>
@@ -21,7 +22,8 @@ const Job = ({ job }) => {
                     <h2 className='flex'><AiOutlineDollarCircle className='text-2xl mr-3' />{salary}</h2>
                 </div>
                 <div className="card-actions ">
-                    <button className="button btn-primary text-sm">View Details</button>
+                    <Link to={`/job/${id}`}><button className="button btn-primary text-sm">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -29,6 +31,6 @@ const Job = ({ job }) => {
 };
 
 Job.propTypes = {
-    job: PropTypes.object.isRequired,
+    job: PropTypes.object
 }
 export default Job;
