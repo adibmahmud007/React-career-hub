@@ -1,12 +1,12 @@
+
 import './App.css'
 
 function App() {
+  
 
   return (
     <>
-      
-      <h1>Vite + React</h1>
-      
+      <h2 className='text-4xl text-center'>hello</h2>
     </>
   )
 }
