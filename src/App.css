@@ -7,7 +7,7 @@
     cursor: pointer;
     border-radius: 5px;
     background: linear-gradient(to right, #b7bde7, #50a7ee);
-    color: #181717;
+    color:black;
     border: 1px solid #252430;
     font-weight: 500;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -17,3 +17,4 @@
     background: linear-gradient(to right, #2196F3, #68b7c9);
     color: #fefefe;
   }
+  
