@@ -10,8 +10,10 @@ import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import AppliedJObs from './components/AppliedJobs/AppliedJObs.jsx';
 import Statistics from './components/Statistics/Statistics.jsx';
-import Job from './components/Job/Job.jsx';
+// import Job from './components/Job/Job.jsx';
 import JObDetails from './components/JobDetails/JObDetails.jsx';
+import Jobs from './components/Jobs/Jobs.jsx';
+// import TestJob from './components/TestJob/TestJob.jsx';
 
 const router=createBrowserRouter([
   {
@@ -30,8 +32,10 @@ const router=createBrowserRouter([
       },
       {
         path:'/jobs',
-        element: <Job></Job>
+        element: <Jobs></Jobs>,
+        loader: ()=> fetch('/jobs.json')
       },
+      
       {
         path: '/statistics',
         element: <Statistics></Statistics>

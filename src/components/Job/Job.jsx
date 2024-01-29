@@ -4,8 +4,9 @@ import { IoLocationSharp } from 'react-icons/io5';
 import { AiOutlineDollarCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 
-const Job = ({ job }) => {
-  // Check if job is defined before attempting to destructure its properties
+const Job = ({job}) => {
+    console.log(job, "job console")
+ 
   if (!job) {
     return <div>Error: Job data is undefined</div>;
   }
