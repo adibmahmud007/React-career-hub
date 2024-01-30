@@ -1,20 +1,14 @@
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import '../../App.css';
 
-
 const Header = () => {
-  
-
-  const links = (
-    <nav >
-      <ul>
-        <li><NavLink  to='/'>Home</NavLink></li>
-        <li><NavLink  to='/jobs'>Jobs</NavLink></li>
-        <li><NavLink  to='/statistics'>Statistics</NavLink></li>
-        <li><NavLink  to='/applied'>Applied Jobs</NavLink></li>
-      </ul>
-    </nav>
-  );
+  const links = <p>
+    <li><NavLink to='/'>Home</NavLink></li>
+    <li><NavLink to='/jobs'>Jobs</NavLink></li>
+    <li><NavLink to='/statistics'>Statistics</NavLink></li>
+    <li><NavLink to='/applied'>Applied Jobs</NavLink></li>
+    
+  </p>
   return (
     <div className="navbar bg-base-100">
       <div className="navbar-start">
@@ -26,7 +20,7 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className=" text-2xl md:text-4xl font-extrabold">Career Hub</a>
+        <a className=" text-xl md:text-4xl font-extrabold">Career Hub</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
@@ -34,7 +28,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <NavLink to='/jobs'><a className="button text-sm ">Start Applying</a></NavLink>
+        <a className="button text-sm ">Start Applying</a>
       </div>
     </div>
   );
