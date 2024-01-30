@@ -16,7 +16,7 @@ const FeaturedJobs = () => {
 
     
     return (
-        <div>
+        <div id="featured">
             
             <div className="md:grid md:grid-cols-2 md:gap-6">
             {

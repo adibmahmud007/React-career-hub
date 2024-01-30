@@ -45,8 +45,8 @@ const AppliedJobs = () => {
     }, [jobs])
     return (
         <div>
-            <div className="flex justify-between">
-            <h2 className="text-2xl ml-4">Jobs I applied: {appliedJobs.length}</h2>
+            <div className="flex justify-between items-center">
+            <h2 className="md:text-2xl text-xl ml-6 md:ml-8">Total jobs applied: {appliedJobs.length}</h2>
             <details className="dropdown mb-3">
                 <summary className="m-1 btn">Filter By</summary>
                 <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
